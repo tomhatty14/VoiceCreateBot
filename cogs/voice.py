@@ -141,7 +141,7 @@ class voice(commands.Cog):
     async def setlimit(self, ctx, num):
         conn = sqlite3.connect('voice.db')
         c = conn.cursor()
-        if ctx.author.id == ctx.guild.owner.id or ctx.author.id == 151028268856770560:
+        if ctx.author.id == ctx.guild.owner.id or ctx.author.id == 174295337131966464:
             c.execute("SELECT * FROM guildSettings WHERE guildID = ?", (ctx.guild.id,))
             voice=c.fetchone()
             if voice is None:
