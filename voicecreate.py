@@ -1,5 +1,5 @@
-from Flask import Flask
-bot = Flask(__name__)
+#from Flask import Flask
+#bot = Flask(__name__)
 
 import discord
 import math
@@ -35,7 +35,7 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
 
        
 bot.run(DISCORD_TOKEN)
